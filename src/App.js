@@ -37,7 +37,7 @@ const App = () => {
             {howItWorksTips.map((benefit, index) => {
               return (
                 <>
-                  <Grid item xs={6} md={3.5} key={index}>
+                  <Grid item xs={6} md={3} key={index}>
                     <Box
                       sx={{
                         p: "1px",
@@ -48,18 +48,7 @@ const App = () => {
                     >
                       <Paper
                         elevation={0}
-                        sx={{
-                          p: 3,
-                          m: 0.3,
-                          textAlign: "center",
-                          display: "flex",
-                          justifyContent: "center",
-                          flexDirection: "column",
-                          borderRadius: "4rem",
-                          height: "30px",
-                          backgroundColor: "#1E1E1E",
-                          color: "white"
-                        }}
+                        sx={styles.howitworksPaper}
                       >
                         <Typography variant="body1" sx={{ fontSize: "18px" }}>
                           {benefit}
@@ -125,7 +114,7 @@ const App = () => {
           >
             {howItWorksTips.map((benefit, index) => (
               <>
-                <Grid item xs={6} key={index}>
+                <Grid item xs={6} style={{width: '100%'}} key={index}>
                   <Box
                     sx={{
                       p: "1px",
@@ -136,18 +125,7 @@ const App = () => {
                   >
                     <Paper
                       elevation={0}
-                      sx={{
-                        p: 3,
-                        m: 0.3,
-                        textAlign: "center",
-                        display: "flex",
-                        justifyContent: "center",
-                        flexDirection: "column",
-                        borderRadius: "4rem",
-                        height: "30px",
-                        backgroundColor: "#1E1E1E",
-                        color: "white"
-                      }}
+                      sx={styles.howitworksPaper}
                     >
                       <Typography variant="body1" sx={{ fontSize: "18px" }}>
                         {benefit}

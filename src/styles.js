@@ -5,6 +5,18 @@ export const styles = {
     borderRadius: "50%",
     display: "inline-flex",
   },
+  howitworksPaper: {
+    p: 3,
+    m: 0.3,
+    textAlign: "center",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    borderRadius: "4rem",
+    height: "30px",
+    backgroundColor: "#1E1E1E",
+    color: "white"
+  },
   divider: {
     border: " 1px solid",
     borderImageSource:

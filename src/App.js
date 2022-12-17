@@ -7,7 +7,7 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   howItWorksTips,
 } from "./data";
@@ -19,11 +19,6 @@ const App = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const [winWit, setWinWit] = useState(window.innerWidth);
-
-  useEffect(() => {
-    setWinWit(window.innerWidth);
-    console.log(winWit);
-  }, [window.innerWidth]);
 
   return (
     <section name="About" style={{ marginTop: '150px' }}>

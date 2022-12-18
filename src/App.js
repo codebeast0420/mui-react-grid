@@ -18,7 +18,6 @@ const App = () => {
 
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  const winWit = window.innerWidth;
 
   return (
     <section name="About" style={{ marginTop: '150px' }}>

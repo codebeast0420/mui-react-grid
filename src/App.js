@@ -9,7 +9,8 @@ import {
 } from "@mui/material";
 import React from "react";
 import {
-  howItWorksTips,
+  howItWorksTips, 
+  howItWorksTipsSM,
 } from "./data";
 import { styles } from "./styles";
 
@@ -69,7 +70,7 @@ const App = () => {
             rowSpacing={4}
           >
             <div style={styles.linkLineSM}></div>
-            {howItWorksTips.map((benefit, index) => (
+            {howItWorksTipsSM.map((benefit, index) => (
               <>
                 <Grid item xs={6} style={{ width: '100%' }} key={index}>
                   <Box
@@ -82,7 +83,7 @@ const App = () => {
                   >
                     <Paper
                       elevation={0}
-                      sx={index !== 3 ? styles.howitworksPaper : styles.howitworksPaper3}
+                      sx={index !== 4 ? styles.howitworksPaper : styles.howitworksPaper3}
                     >
                       <Typography variant="body1" sx={{ fontSize: "18px" }}>
                         {benefit}

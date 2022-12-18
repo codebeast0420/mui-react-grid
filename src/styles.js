@@ -1,4 +1,28 @@
 export const styles = {
+  linkLine: {
+    content: "",
+    position: "absolute",
+    left: "calc(50% - 300px)",
+    top: "190px",
+    height: "122px",
+    borderRadius: "20px",
+    width: "800px",
+    background: "linear-gradient(#FFFFFF, #FFFFFF) padding-box, linear-gradient(to right, #FCECB2, #FF8B89, #FC8ADC, #7954FF, #70BCFF) border-box",
+    border: "4px solid transparent",
+    borderLeft: "none",
+    zIndex: "-1",
+  },
+  linkLineSM: {
+    content: "",
+    position: "absolute",
+    left: "50%",
+    top: "190px",
+    height: "450px",
+    background: "linear-gradient(#FFFFFF, #FFFFFF) padding-box, linear-gradient(to right, #FCECB2, #FF8B89, #FC8ADC, #7954FF, #70BCFF) border-box",
+    border: "4px solid transparent",
+    borderLeft: "none",
+    zIndex: "-1",
+  },
   iconWrapper: {
     padding: "26px",
     backgroundColor: "#353535",
@@ -15,6 +39,18 @@ export const styles = {
     borderRadius: "4rem",
     height: "30px",
     backgroundColor: "#1E1E1E",
+    color: "white"
+  },
+  howitworksPaper3: {
+    p: 3,
+    m: 0.3,
+    textAlign: "center",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    borderRadius: "4rem",
+    height: "30px",
+    backgroundColor: "inherit",
     color: "white"
   },
   divider: {
